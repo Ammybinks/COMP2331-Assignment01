@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=CollisionManager
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CollisionManager\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=CollisionManager()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CollisionManager\r\n
+comment2.params=pos\ size
+comment2.target=DataStructures.Collision\ checkEdges(DataStructures.Vector2,\ DataStructures.Vector2)
+comment3.params=pos
+comment3.target=void\ checkEdges(DataStructures.Vector2)
+comment4.params=x\ width
+comment4.target=int\ checkXEdges(double,\ double)
+comment5.params=y\ height
+comment5.target=int\ checkYEdges(double,\ double)
+comment6.params=edge\ width
+comment6.target=double\ clampX(int,\ double)
+comment7.params=edge\ height
+comment7.target=double\ clampY(int,\ double)
+numComments=8

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Simulation
+comment0.text=\r\n\ Simulation\ is\ the\ top-level\ class\ for\ the\ Aquarium\ simulation.\r\n\ \r\n\ @author\ Nye\ Blythe\ &\ Marc\ Price\r\n\ @version\ 1.1\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=Simulation()
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Simulation\r\n
+comment3.params=
+comment3.target=void\ populate()
+comment4.params=
+comment4.target=void\ addJavaFish()
+comment5.params=
+comment5.target=void\ addSeaHorse()
+comment6.params=
+comment6.target=void\ addUrchin()
+comment7.params=fish
+comment7.target=void\ addFish(Fish)
+comment8.params=
+comment8.target=void\ run()
+comment8.text=\r\n\ METHOD\:\ Run\ the\ simulation\ loop.\ \ User\ presses\ escape\ to\ exit.\r\n\r\n
+numComments=9

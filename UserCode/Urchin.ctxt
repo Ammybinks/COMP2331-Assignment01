@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Urchin
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Urchin\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=rand\ pos\ aquariumSize
+comment1.target=Urchin(Behaviours.RandomRange,\ DataStructures.Vector2,\ DataStructures.Vector2)
+comment2.params=newDirection
+comment2.target=void\ setXDirection(int)
+numComments=3

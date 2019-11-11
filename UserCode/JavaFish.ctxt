@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=JavaFish
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ JavaFish\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=rand\ pos\ aquariumSize
+comment1.target=JavaFish(Behaviours.RandomRange,\ DataStructures.Vector2,\ DataStructures.Vector2)
+numComments=2

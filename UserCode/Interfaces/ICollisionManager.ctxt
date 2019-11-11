@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=ICollisionManager
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ ICollisionManager\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=pos\ size
+comment1.target=DataStructures.Collision\ checkEdges(DataStructures.Vector2,\ DataStructures.Vector2)
+numComments=2
