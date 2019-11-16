@@ -2,19 +2,19 @@ package UserCode.Interfaces;
 
 
 /**
- * Write a description of interface IStateManager here.
+ * Interface attatched to the StateManager class providing references needed for use by updatable Fish tokens
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Nye Blythe
+ * @version 1.0
  */
 public interface IStateManager
 {
     int State();
     boolean Switched();
-    
-    
+
+
     void updateState();
-    
+
     void setAccelTime();
     double getAccelTime();
 }

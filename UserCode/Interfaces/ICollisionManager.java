@@ -4,10 +4,10 @@ import DataStructures.Vector2;
 import DataStructures.Collision;
 
 /**
- * Write a description of interface ICollisionManager here.
+ * Interface attatched to the CollisionManager class providing references needed for use by collidable objects
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Nye Blythe
+ * @version 1.0
  */
 public interface ICollisionManager
 {

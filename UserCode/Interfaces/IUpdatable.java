@@ -2,10 +2,10 @@ package UserCode.Interfaces;
 
 
 /**
- * Write a description of interface IUpdatable here.
+ * Interface attatched to updatable tokens to allow for being updated and managed
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Nye Blythe
+ * @version 1.0
  */
 public interface IUpdatable
 {
