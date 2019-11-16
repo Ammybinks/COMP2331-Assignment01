@@ -1,7 +1,13 @@
 #BlueJ class context
 comment0.target=Vector2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Vector2\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=x\ y
-comment1.target=Vector2(java.lang.Object,\ java.lang.Object)
+comment0.text=\r\n\ Stores\ a\ set\ of\ set\ of\ values,\ each\ defined\ by\ a\ different\ axis\ on\ a\ two-dimensional\ plane\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.1\r\n
+comment1.params=
+comment1.target=Vector2()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Vector2\r\n
-numComments=2
+comment2.params=x\ y
+comment2.target=Vector2(java.lang.Object,\ java.lang.Object)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Vector2\r\n\r\n\ @param\ x\ \ \ \ \ The\ x\ value\ to\ store\r\n\ @param\ y\ \ \ \ \ The\ y\ value\ to\ store\r\n
+comment3.params=x\ y
+comment3.target=void\ set(java.lang.Object,\ java.lang.Object)
+comment3.text=\r\n\ METHOD\:\ Set\ the\ values\ in\ this\ vector\ to\ new\ ones\r\n\r\n\ @param\ x\ \ \ \ \ The\ new\ x\ value\r\n\ @param\ y\ \ \ \ \ The\ new\ y\ value\r\n
+numComments=4

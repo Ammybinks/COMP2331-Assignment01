@@ -27,16 +27,16 @@ public class Urchin extends Fish
         super(rand, pos, aquariumSize, "models/billboard/billboard.obj", "textures/javaFish/Urchin.png");
 
         // SET: _size to default values to match texture
-        _size.set(0.9d, 0.8d);
+        _size.set(0.95d, 0.8d);
 
         // SET: speed values to defaults for Urchin movement
         // To move the fish horizontally along the aquarium, vertical speed values should always be 0
         // _speed:
-        _speed.set(0.05d, 0d);
+        _speed.set(0.01d, 0.0d);
         // _startSpeed:
-        _startSpeed.set(0.03d, 0d);
+        _startSpeed.set(0.0d, 0.0d);
         // _maxSpeed:
-        _maxSpeed.set(0.05d, 0d);
+        _maxSpeed.set(0.02d, 0.0d);
 
         // SET: _direction to default values (1, 0) to begin the fish moving right
         _direction.set(1, 0);
@@ -44,7 +44,7 @@ public class Urchin extends Fish
 
 
     /**
-     * METHOD: Set the direction the fish moves horizontally
+     * METHOD: Set the direction the fish moves horizontally<br>
      * Overrides Fish.setXDirection(), removing the logic which changes the direction of the sprite
      *
      * @param newDirection      The new direction to face

@@ -1,19 +1,25 @@
 #BlueJ class context
 comment0.target=MathF
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MathF\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ MathFish\ class\ contains\ a\ variety\ of\ mathematical\ functions\ commonly\ used\ throughout\ the\ program\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
 comment1.params=
 comment1.target=MathF()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MathF\r\n
 comment2.params=minValue\ value
 comment2.target=double\ clampMin(double,\ double)
+comment2.text=\r\n\ METHOD\:\ Clamp\ a\ value\ to\ a\ given\ negative\ bound\r\n\r\n\ @param\ minValue\ \ \ \ \ \ The\ negative\ bound\ to\ clamp\ to\r\n\ @param\ value\ \ \ \ \ \ \ \ \ The\ value\ to\ clamp\r\n\r\n\ @return\ The\ clamped\ value\r\n
 comment3.params=maxValue\ value
 comment3.target=double\ clampMax(double,\ double)
+comment3.text=\r\n\ METHOD\:\ Clamp\ a\ value\ to\ a\ given\ positive\ bound\r\n\r\n\ @param\ maxValue\ \ \ \ \ \ The\ positive\ bound\ to\ clamp\ to\r\n\ @param\ value\ \ \ \ \ \ \ \ \ The\ value\ to\ clamp\r\n\r\n\ @return\ The\ clamped\ value\r\n
 comment4.params=maxValue\ value
 comment4.target=double\ clamp(double,\ double)
+comment4.text=\r\n\ METHOD\:\ Clamp\ a\ value\ to\ a\ given\ positive\ bound\r\n\r\n\ @param\ maxValue\ \ \ \ \ \ The\ positive\ bound\ to\ clamp\ to\r\n\ @param\ value\ \ \ \ \ \ \ \ \ The\ value\ to\ clamp\r\n\r\n\ @return\ The\ clamped\ value\r\n
 comment5.params=minValue\ maxValue\ value
 comment5.target=double\ clamp(double,\ double,\ double)
+comment5.text=\r\n\ METHOD\:\ Clamp\ a\ value\ to\ given\ positive\ and\ negative\ bounds\r\n\r\n\ @param\ minValue\ \ \ \ \ \ The\ negative\ bound\ to\ clamp\ to\r\n\ @param\ maxValue\ \ \ \ \ \ The\ positive\ bound\ to\ clamp\ to\r\n\ @param\ value\ \ \ \ \ \ \ \ \ The\ value\ to\ clamp\r\n\r\n\ @throws\ IllegalArgumentException\ \ \ \ \ If\ upper\ and\ lower\ bounds\ result\ in\ a\ range\ of\ less\ than\ 0\r\n\r\n\ @return\ The\ clamped\ value\r\n
 comment6.params=p1\ p2\ pos
 comment6.target=double\ lerp(double,\ double,\ double)
+comment6.text=\r\n\ METHOD\:\ Linearly\ interpolate\ to\ a\ value\ a\ given\ distance\ between\ two\ given\ values\r\n\r\n\ @param\ p1\ \ \ \ \ \ The\ first\ value\ to\ interpolate\ between\r\n\ @param\ p2\ \ \ \ \ \ The\ second\ value\ to\ interpolate\ between\r\n\ @param\ pos\ \ \ \ \ The\ position\ between\ the\ two\ points\ as\ a\ value\ between\ 0\ and\ 1,\ with\ 0\ representing\ p1\ and\ 1\ representing\ p2\r\n\r\n\ @return\ The\ value\ a\ distance\ along\ the\ line\ (p1,\ p2)\ of\ pos\r\n
 comment7.params=p\ pos
 comment7.target=double\ rLerp(java.util.List,\ double)
+comment7.text=\r\n\ METHOD\:\ Recursively\ linearly\ interpolate\ between\ each\ value\ in\ the\ given\ list\ to\ find\ the\ value\ the\ given\ distance\ between\ each\ of\ them\r\n\r\n\ @param\ p\ \ \ \ \ The\ list\ of\ vales\ to\ interpolate\ between\r\n\ @param\ pos\ \ \ The\ distance\ along\ each\ line\ as\ a\ value\ between\ 0\ and\ 1,\ with\ 0\ representing\ the\ start\ of\ each\ set\ of\ points\ and\ 1\ representing\ the\ end\r\n\r\n\ @return\ The\ value\ interpolated\ pos\ distance\ between\ each\ point\ in\ p\r\n
 numComments=8

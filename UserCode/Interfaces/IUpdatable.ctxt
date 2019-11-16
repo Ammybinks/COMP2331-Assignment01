@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=IUpdatable
-comment0.text=\r\n\ Write\ a\ description\ of\ interface\ IUpdatable\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Interface\ attatched\ to\ updatable\ tokens\ to\ allow\ for\ being\ updated\ and\ managed\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
 comment1.params=
 comment1.target=void\ update()
 numComments=2

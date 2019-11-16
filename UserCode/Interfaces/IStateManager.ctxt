@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=IStateManager
-comment0.text=\r\n\ Write\ a\ description\ of\ interface\ IStateManager\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Interface\ attatched\ to\ the\ StateManager\ class\ providing\ references\ needed\ for\ use\ by\ updatable\ Fish\ tokens\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
 comment1.params=
 comment1.target=int\ State()
 comment2.params=

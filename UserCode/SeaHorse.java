@@ -28,10 +28,10 @@ public class SeaHorse extends Fish
      * @param pos           The initial position of the fish
      * @param aquariumSize  The size of the aquarium the fish is being placed in
      */
-    public JavaFish(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize)
+    public SeaHorse(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize)
     {
         // Pass rand, pos and aquariumSize to parent Fish() including default values for modelPath and texturePath (passing path to SeaHorse texture):
-        super("models/billboard/billboard.obj", "textures/javaFish/Seahorse.png", rand, pos, aquariumSize);
+        super(rand, pos, aquariumSize, "models/billboard/billboard.obj", "textures/javaFish/Seahorse.png");
 
         // SET: rotateZ to flip z rotation of the fish
         // This is necessary to correctly orientate the texture 'Seahorse.png'
@@ -39,22 +39,22 @@ public class SeaHorse extends Fish
 
 
         // SET: _size to default values to match texture
-        _size.set(0.9d, 0.8d);
+        _size.set(0.8d, 0.95d);
 
         // SET: speed values to defaults for JavaFish movement
         // _speed:
-        _speed.set(0.05d, 0.05d);
+        _speed.set(0.03d, 0.03d);
         // _startSpeed:
         _startSpeed.set(0.03d, 0.03d);
         // _maxSpeed:
-        _maxSpeed.set(0.05d, 0.05d);
+        _maxSpeed.set(0.03d, 0.03d);
 
         // SET: _direction to default values (1, 1) to begin the fish moving right and up
         _direction.set(1, 1);
     }
 
     /**
-     * METHOD: Stop the fish from moving, this is called only if determined by the state manager
+     * METHOD: Stop the fish from moving, this is called only if determined by the state manager<br>
      * Overrides Fish.stop(), stopping only x movement instead of y movement, to facilitate sinking behaviour
      */
     protected void stop()
@@ -70,7 +70,7 @@ public class SeaHorse extends Fish
         }
     }
     /**
-     * METHOD: Start the fish moving, beginning a swim cycle, this is called only if determined by the state manager
+     * METHOD: Start the fish moving, beginning a swim cycle, this is called only if determined by the state manager<br>
      * Overrides Fish.start(), extending it to apply to vertical movement as well as horizontal movement
      */
     protected void start()
@@ -87,7 +87,7 @@ public class SeaHorse extends Fish
         _direction._y = 1;
     }
     /**
-     * METHOD: Increase the fish's speed gradually, this is called only if determined by the state manager
+     * METHOD: Increase the fish's speed gradually, this is called only if determined by the state manager<br>
      * Overrides Fish.accelerate(), extending it to apply to vertical movement as well as horizontal movement
      */
     protected void accelerate()
@@ -114,7 +114,7 @@ public class SeaHorse extends Fish
         _speed._y = MathF.rLerp(_speedCurve._y, lerpPos);
     }
     /**
-     * METHOD: Decrease the fish's speed gradually and cause the fish to sink over time, this is called only if determined by the state manager
+     * METHOD: Decrease the fish's speed gradually and cause the fish to sink over time, this is called only if determined by the state manager<br>
      * Overrides Fish.decelerate() to implement sinking behaviour
      */
     protected void decelerate()

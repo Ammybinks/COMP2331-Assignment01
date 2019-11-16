@@ -1,6 +1,7 @@
 #BlueJ class context
 comment0.target=JavaFish
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ JavaFish\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ JavaFish\ swims\ back\ and\ forth\ across\ the\ screen,\ randomly\ decelerating\ to\ a\ stop\ before\ starting\ again\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
 comment1.params=rand\ pos\ aquariumSize
 comment1.target=JavaFish(Behaviours.RandomRange,\ DataStructures.Vector2,\ DataStructures.Vector2)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ JavaFish\r\n\r\n\ @param\ rand\ \ \ \ \ \ \ \ \ \ Reference\ to\ an\ instance\ of\ a\ random\ object\r\n\ @param\ pos\ \ \ \ \ \ \ \ \ \ \ The\ initial\ position\ of\ the\ fish\r\n\ @param\ aquariumSize\ \ The\ size\ of\ the\ aquarium\ the\ fish\ is\ being\ placed\ in\r\n
 numComments=2

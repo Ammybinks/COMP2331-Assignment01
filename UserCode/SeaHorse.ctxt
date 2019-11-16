@@ -1,15 +1,19 @@
 #BlueJ class context
 comment0.target=SeaHorse
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ SeaHorse\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ SeaHorse\ swims\ diagonally\ around\ the\ screen,\ randomly\ decelerating\ and\ sinking\ before\ starting\ upwards\ again\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
 comment1.params=rand\ pos\ aquariumSize
 comment1.target=SeaHorse(Behaviours.RandomRange,\ DataStructures.Vector2,\ DataStructures.Vector2)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ SeaHorse\r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ SeaHorse\r\n\r\n\ @param\ rand\ \ \ \ \ \ \ \ \ \ Reference\ to\ an\ instance\ of\ a\ random\ object\r\n\ @param\ pos\ \ \ \ \ \ \ \ \ \ \ The\ initial\ position\ of\ the\ fish\r\n\ @param\ aquariumSize\ \ The\ size\ of\ the\ aquarium\ the\ fish\ is\ being\ placed\ in\r\n
 comment2.params=
 comment2.target=void\ stop()
+comment2.text=\r\n\ METHOD\:\ Stop\ the\ fish\ from\ moving,\ this\ is\ called\ only\ if\ determined\ by\ the\ state\ manager<br>\r\n\ Overrides\ Fish.stop(),\ stopping\ only\ x\ movement\ instead\ of\ y\ movement,\ to\ facilitate\ sinking\ behaviour\r\n
 comment3.params=
 comment3.target=void\ start()
+comment3.text=\r\n\ METHOD\:\ Start\ the\ fish\ moving,\ beginning\ a\ swim\ cycle,\ this\ is\ called\ only\ if\ determined\ by\ the\ state\ manager<br>\r\n\ Overrides\ Fish.start(),\ extending\ it\ to\ apply\ to\ vertical\ movement\ as\ well\ as\ horizontal\ movement\r\n
 comment4.params=
 comment4.target=void\ accelerate()
+comment4.text=\r\n\ METHOD\:\ Increase\ the\ fish's\ speed\ gradually,\ this\ is\ called\ only\ if\ determined\ by\ the\ state\ manager<br>\r\n\ Overrides\ Fish.accelerate(),\ extending\ it\ to\ apply\ to\ vertical\ movement\ as\ well\ as\ horizontal\ movement\r\n
 comment5.params=
 comment5.target=void\ decelerate()
+comment5.text=\r\n\ METHOD\:\ Decrease\ the\ fish's\ speed\ gradually\ and\ cause\ the\ fish\ to\ sink\ over\ time,\ this\ is\ called\ only\ if\ determined\ by\ the\ state\ manager<br>\r\n\ Overrides\ Fish.decelerate()\ to\ implement\ sinking\ behaviour\r\n
 numComments=6

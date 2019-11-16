@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=Urchin
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Urchin\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ Urchin\ moves\ back\ and\ forth\ across\ the\ screen,\ randomly\ decelerating\ to\ a\ stop\ before\ starting\ again.\ Display\ of\ the\ Urchin\ doesn't\ change\ depending\ on\ its\ direction\ of\ movement\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
 comment1.params=rand\ pos\ aquariumSize
 comment1.target=Urchin(Behaviours.RandomRange,\ DataStructures.Vector2,\ DataStructures.Vector2)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Urchin\r\n\r\n\ @param\ rand\ \ \ \ \ \ \ \ \ \ Reference\ to\ an\ instance\ of\ a\ random\ object\r\n\ @param\ pos\ \ \ \ \ \ \ \ \ \ \ The\ initial\ position\ of\ the\ fish\r\n\ @param\ aquariumSize\ \ The\ size\ of\ the\ aquarium\ the\ fish\ is\ being\ placed\ in\r\n
 comment2.params=newDirection
 comment2.target=void\ setXDirection(int)
+comment2.text=\r\n\ METHOD\:\ Set\ the\ direction\ the\ fish\ moves\ horizontally<br>\r\n\ Overrides\ Fish.setXDirection(),\ removing\ the\ logic\ which\ changes\ the\ direction\ of\ the\ sprite\r\n\r\n\ @param\ newDirection\ \ \ \ \ \ The\ new\ direction\ to\ face\r\n
 numComments=3

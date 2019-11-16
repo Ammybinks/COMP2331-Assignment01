@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=RandomRange
+comment0.text=\r\n\ Wrapper\ class\ for\ java.util.Random,\ adding\ functionality\ to\ easily\ randomise\ numbers\ between\ two\ values\r\n\r\n\ @author\ Nye\ Blythe\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=RandomRange()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RandomRange\r\n
+comment2.params=seed
+comment2.target=RandomRange(long)
+comment3.params=min\ max
+comment3.target=double\ rangeInt(int,\ int)
+comment3.text=\r\n\ METHOD\:\ Returns\ the\ next\ pseudorandom,\ uniformly\ distributed\ int\ value\ between\ the\ two\ given\ values\ from\ this\ random\ number\ generator's\ sequence\r\n\r\n\ @param\ min\ \ \ \ \ \ \ Inclusive\ minimum\ value\ of\ the\ range\r\n\ @param\ max\ \ \ \ \ \ \ Exclusive\ maximum\ value\ of\ the\ range\r\n\r\n\ @return\ The\ next\ pseudorandom,\ uniformly\ distributed\ int\ value\ between\ the\ two\ given\ values\ from\ this\ random\ number\ generator's\ sequence\r\n\ @see\ java.util.Random.nextInt()\r\n
+comment4.params=min\ max
+comment4.target=double\ rangeDouble(double,\ double)
+comment4.text=\r\n\ METHOD\:\ Returns\ the\ next\ pseudorandom,\ uniformly\ distributed\ double\ value\ between\ the\ two\ given\ values\ from\ this\ random\ number\ generator's\ sequence\r\n\r\n\ @param\ min\ \ \ \ \ \ \ Inclusive\ minimum\ value\ of\ the\ range\r\n\ @param\ max\ \ \ \ \ \ \ Exclusive\ maximum\ value\ of\ the\ range\r\n\r\n\ @return\ The\ next\ pseudorandom,\ uniformly\ distributed\ double\ value\ between\ the\ two\ given\ values\ from\ this\ random\ number\ generator's\ sequence\r\n\ @see\ java.util.Random.nextDouble()\r\n
+numComments=5
