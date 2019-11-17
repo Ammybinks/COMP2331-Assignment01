@@ -36,7 +36,6 @@ public class SeaHorse extends Fish
               aquariumSize, 
               new int[][] {
                   {30, 600},
-                  {0, 1},
                   {15, 90},
                   {15, 180},
                   {15, 180}},
@@ -80,23 +79,6 @@ public class SeaHorse extends Fish
         }
     }
     /**
-     * METHOD: Start the fish moving, beginning a swim cycle, this is called only if determined by the state manager<br>
-     * Overrides Fish.start(), extending it to apply to vertical movement as well as horizontal movement
-     */
-    protected void start()
-    {
-        /*
-            call base start behaviour to start moving randomly in a random direction on the x axis
-            additionally randomise a starting y speed and start the fish moving upwards
-        */
-
-        super.start();
-
-        _speed._y = _rand.rangeDouble(0, _startSpeed._y);
-
-        _direction._y = 1;
-    }
-    /**
      * METHOD: Increase the fish's speed gradually, this is called only if determined by the state manager<br>
      * Overrides Fish.accelerate(), extending it to apply to vertical movement as well as horizontal movement
      */
@@ -105,15 +87,22 @@ public class SeaHorse extends Fish
         /*
             call base behaviour to accelerate along the x axis
             additionally:
-                make a curve between current y speed and the maximum y speed on the first update only
+                for the first update:
+                    randomise a starting y speed 
+                    start the fish moving upwards
+                    make a curve between current y speed and the maximum y speed
                 interpolate along the curve to determine y speed in the same way as base behaviour
         */
 
         super.accelerate();
 
-            // IF: the state just changed to this:
+        // IF: the state just changed to this:
         if(_stateManager.Switched())
         {
+            _speed._y = _rand.rangeDouble(0, _startSpeed._y);
+    
+            _direction._y = 1;
+            
             double range = _maxSpeed._y - _speed._y;
             double center = _speed._y + (range / 2);
             _speedCurve._y = Arrays.asList(_speed._y, center, center, _maxSpeed._y);

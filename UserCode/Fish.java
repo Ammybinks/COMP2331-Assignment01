@@ -116,20 +116,14 @@ public class Fish extends DisplayObject implements IUpdatable
             // Prevent any movement until the start of the next swim cycle:
             stop();
         }
-        // IF: state is 1 (starting):
+        // IF: state is 1 (accelerating):
         if(state == 1)
-        {
-            // Begin the next swim cycle:
-            start();
-        }
-        // IF: state is 2 (accelerating):
-        if(state == 2)
         {
             // Update the current speed values, accelerating the fish:
             accelerate();
         }
-        // IF: state is 4 (decelerating):
-        if(state == 4)
+        // IF: state is 3 (decelerating):
+        if(state == 3)
         {
             // Update the current speed values, decelerating the fish:
             decelerate();
@@ -163,37 +157,14 @@ public class Fish extends DisplayObject implements IUpdatable
         }
     }
     /**
-     * METHOD: Start the fish moving, beginning a swim cycle, this is called only if determined by the state manager
-     */
-    protected void start()
-    {
-        /*
-            randomly decide a direction to start moving in
-            randomise a speed to start moving at
-        */
-
-        // IF: random number is within a certain range (50% chance):
-        if(_rand.nextDouble() >= 0.5)
-        {
-            // SET: x direction to face the fish right:
-            setXDirection(1);
-        }
-        else
-        {
-            // SET: y direction to face the fish left:
-            setXDirection(-1);
-        }
-
-        // SET: x speed to a random value between 0 and _startSpeed
-        _speed._x = _rand.rangeDouble(0, _startSpeed._x);
-    }
-    /**
      * METHOD: Increase the fish's speed gradually, this is called only if determined by the state manager
      */
     protected void accelerate()
     {
         /*
             for the first update:
+                randomly decide a direction to start moving in
+                randomise a speed to start moving at
                 make a curve between the current speed and max speed to determine how fast to accelerate at any point
                 set a timer with state manager to know how far in the behaviour the fish is
             interpolate along the points on the curve based on how long the behaviour's been running, set x speed to that value
@@ -202,6 +173,21 @@ public class Fish extends DisplayObject implements IUpdatable
         // IF: the state just changed to this:
         if(_stateManager.Switched())
         {
+            // IF: random number is within a certain range (50% chance):
+            if(_rand.nextDouble() >= 0.5)
+            {
+                // SET: x direction to face the fish right:
+                setXDirection(1);
+            }
+            else
+            {
+                // SET: y direction to face the fish left:
+                setXDirection(-1);
+            }
+    
+            // SET: x speed to a random value between 0 and _startSpeed
+            _speed._x = _rand.rangeDouble(0, _startSpeed._x);
+            
             // Calculate the value directly between current x speed and maximum x speed:
             double center = (_maxSpeed._x + _speed._x) / 2;
             // INSTANTIATE a new set of points indicating a curve to smooth from current x speed to maximum x speed:

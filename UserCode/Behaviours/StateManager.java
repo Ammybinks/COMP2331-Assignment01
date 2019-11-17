@@ -16,15 +16,14 @@ public class StateManager implements IStateManager
      * The list of different states and their enumerable index are as follows:
      *
      * 0; STOP
-     * 1; START
-     * 2; ACCELERATE
-     * 3; SWIM
-     * 4; DECELERATE
+     * 1; ACCELERATE
+     * 2; SWIM
+     * 3; DECELERATE
      */
     // DECLARE an integer to track the current state, call it '_state' and initialise it to the default value 3 (swim):
-    private int _state = 3;
+    private int _state = 2;
     // DECLARE an integer to define the total number of states, call it '_stateNum' and initialise it to the default value of 5:
-    private int _stateNum = 5;
+    private int _stateNum = 4;
     // DECLARE a boolean to track if the state recently changed, call it '_switched':
     private boolean _switched = false;
 
@@ -82,7 +81,6 @@ public class StateManager implements IStateManager
         // Pass the given values up to the next most specific overload of this constructor, including default values for timerDefaults:
         this(rand,
              new int[][] {{30,300},
-                          {0,0},
                           {30,300},
                           {30,300},
                           {30,300}});

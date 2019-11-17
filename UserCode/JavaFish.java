@@ -29,7 +29,6 @@ public class JavaFish extends Fish
               aquariumSize, 
               new int[][] {
                   {30, 180},
-                  {0, 1},
                   {120, 240},
                   {180, 480},
                   {120, 180}},

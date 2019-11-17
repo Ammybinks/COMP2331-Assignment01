@@ -29,7 +29,6 @@ public class Urchin extends Fish
               aquariumSize, 
               new int[][] {
                   {180, 1200},
-                  {0, 1},
                   {240, 600},
                   {0, 600},
                   {240, 600}},
