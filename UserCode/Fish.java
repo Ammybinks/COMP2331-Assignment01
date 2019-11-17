@@ -65,7 +65,7 @@ public class Fish extends DisplayObject implements IUpdatable
      * @param modelPath     Relative path to the model used to display the fish
      * @param texturePath   Relative path to the texture used to display the fish
      */
-    public Fish(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize, String modelPath, String texturePath)
+    public Fish(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize, int[][] stateDurations, String modelPath, String texturePath)
     {
         // Pass modelPath and texturePath to parent DisplayObject(), including default value 0.4 for scale:
         super(modelPath, texturePath, 0.4);
@@ -74,7 +74,7 @@ public class Fish extends DisplayObject implements IUpdatable
         // _collisionManager:
         _collisionManager = new CollisionManager(aquariumSize);
         // _stateManager:
-        _stateManager = new StateManager(rand);
+        _stateManager = new StateManager(rand, stateDurations);
 
         // SET: data members to parameters
         // _rand:
@@ -91,18 +91,6 @@ public class Fish extends DisplayObject implements IUpdatable
         rotateX = 0;
         rotateY = 270;
         rotateZ = 0;
-    }
-    /**
-     * Constructor for objects of class JavaFish
-     *
-     * @param rand          Reference to an instance of a RandomRange object
-     * @param pos           The initial position of the fish
-     * @param aquariumSize  The size of the aquarium the fish is being placed in
-     */
-    public Fish(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize)
-    {
-        // Pass the given values up to the next most specific overload of this constructor, including default values for modelPath and texturePath:
-        this(rand, pos, aquariumSize, "models/billboard/billboard.obj", "textures/javaFish/JavaFish.png");
     }
 
     /**

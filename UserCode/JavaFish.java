@@ -24,7 +24,17 @@ public class JavaFish extends Fish
     public JavaFish(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize)
     {
         // Pass rand, pos and aquariumSize to parent Fish() including default values for modelPath and texturePath (passing path to JavaFish texture):
-        super(rand, pos, aquariumSize, "models/billboard/billboard.obj", "textures/javaFish/JavaFish.png");
+        super(rand, 
+              pos, 
+              aquariumSize, 
+              new int[][] {
+                  {30, 180},
+                  {0, 1},
+                  {120, 240},
+                  {180, 480},
+                  {120, 180}},
+              "models/billboard/billboard.obj", 
+              "textures/javaFish/JavaFish.png");
 
         // SET: _size to default values to match texture
         _size.set(0.9d, 0.8d);

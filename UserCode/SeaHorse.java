@@ -31,7 +31,17 @@ public class SeaHorse extends Fish
     public SeaHorse(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize)
     {
         // Pass rand, pos and aquariumSize to parent Fish() including default values for modelPath and texturePath (passing path to SeaHorse texture):
-        super(rand, pos, aquariumSize, "models/billboard/billboard.obj", "textures/javaFish/Seahorse.png");
+        super(rand, 
+              pos, 
+              aquariumSize, 
+              new int[][] {
+                  {30, 600},
+                  {0, 1},
+                  {15, 90},
+                  {15, 180},
+                  {15, 180}},
+              "models/billboard/billboard.obj", 
+              "textures/javaFish/Seahorse.png");
 
         // SET: rotateZ to flip z rotation of the fish
         // This is necessary to correctly orientate the texture 'Seahorse.png'

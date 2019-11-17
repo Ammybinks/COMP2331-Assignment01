@@ -67,8 +67,10 @@ public class StateManager implements IStateManager
         // _timerDefaults:
         _timerDefaults = timerDefaults;
 
+        System.out.println(_timerDefaults[_state][0] + " " + _timerDefaults[_state][1]);
+        
         // SET: _timer to a random value based on the timer defaults for the current state
-        _timer = _rand.rangeInt(_timerDefaults[_state][0], _timerDefaults[_state][1]);
+        //_timer = _rand.rangeInt(_timerDefaults[_state][0], _timerDefaults[_state][1]);
     }
     /**
      * Constructor for objects of class StateManager

@@ -24,7 +24,17 @@ public class Urchin extends Fish
     public Urchin(RandomRange rand, Vector2<Double> pos, Vector2<Double> aquariumSize)
     {
         // Pass rand, pos and aquariumSize to parent Fish() including default values for modelPath and texturePath (passing path to Urchin texture):
-        super(rand, pos, aquariumSize, "models/billboard/billboard.obj", "textures/javaFish/Urchin.png");
+        super(rand, 
+              pos, 
+              aquariumSize, 
+              new int[][] {
+                  {180, 1200},
+                  {0, 1},
+                  {240, 600},
+                  {0, 600},
+                  {240, 600}},
+              "models/billboard/billboard.obj", 
+              "textures/javaFish/Urchin.png");
 
         // SET: _size to default values to match texture
         _size.set(0.95d, 0.8d);
@@ -32,11 +42,11 @@ public class Urchin extends Fish
         // SET: speed values to defaults for Urchin movement
         // To move the fish horizontally along the aquarium, vertical speed values should always be 0
         // _speed:
-        _speed.set(0.01d, 0.0d);
+        _speed.set(0.001d, 0.0d);
         // _startSpeed:
         _startSpeed.set(0.0d, 0.0d);
         // _maxSpeed:
-        _maxSpeed.set(0.02d, 0.0d);
+        _maxSpeed.set(0.01d, 0.0d);
 
         // SET: _direction to default values (1, 0) to begin the fish moving right
         _direction.set(1, 0);
